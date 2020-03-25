@@ -43,7 +43,15 @@
 //  repeatString('dog', 2); // => 'dogdog' 
 //  repeatString('dog', 3); // => 'dogdogdog'
 // Your task is to implement the repeatString function using a while loop.
-   function repeatstring
+   function repeatstring(str, count) {
+   	 var result = ""
+   	   while(count > 0) {
+   	   	 result = result + str
+   	   	   count = count - 1
+   	   }
+       return result 
+   }
+
 
 
 
@@ -58,7 +66,19 @@
 //  counting(5); // => '1, 2, 3, 4, 5' 
 //  counting(1); // => '1' 
 //  counting(3); // => '1, 2, 3'
-
+   function counting(n) {
+   	 var result = ''
+   	 var counter = 1
+   	  while(counter < n){
+   	  	result = result + counter + ',' 
+   	  	counter = counter + 1 
+   	  }
+       if (counter === n) {
+       	  result = result + counter 
+       	  counter = counter + 1
+       }
+       return result
+   }
 
 
 
