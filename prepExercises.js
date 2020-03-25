@@ -101,7 +101,15 @@
 //  reverseString('1#*$'); // => '$*#1'
 // Do this using a while loop.
 
-
+ function reverseString(str) {
+ 	var result = ""
+ 	var i = str.length - 1
+  while(i >= 0) {
+  	result = result + str[i]
+             i--
+  }
+  return result
+ }
 
 // 5.Write a javascript program to print all Prime numbers from 1 to n.
 
@@ -113,6 +121,23 @@
 //  '0 is even' 
 //  '1 is odd' 
 //  '2 is even'
+  function test(num) {
+  	var result = ""
+    var x = 0
+   while(x < num) {
+   	 if(num%2===0) {
+       result = result + x
+         x++
+   	   return num + 'is even'
+   	 } else if (num%3===0) {
+   	 	result = result +x 
+   	 	  x++
+   	  return num + 'is odd'
+   	 }
+      return result
+   }
+  }
+
 
 
 
