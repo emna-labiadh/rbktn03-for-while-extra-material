@@ -2,9 +2,22 @@
 // 0.Try to write all of the exercises using both the for loop and while loop.
 
 // 1.Write a function sum that computes the sum of the numbers in an array.
-
+function sum(array) {
+	var total = 0
+	for(var i = 0; i < array.length; i++) {
+		total = total + array[i]
+	}
+    return total
+}
 // 2.Write a function max that accepts an array of numbers and returns the largest number in the array.
-
+   function max(array) {
+   	 var x = 0
+   	 for(i = 0; i < array.length; i++) {
+   	 	if(array[i] > x)
+   	 	   x = array[i]
+   	 }
+     return x 
+   }
 // 3.Try the following at a console:
 
 //  'the quick brown fox jumped over the lazy dog'.split(' ');
